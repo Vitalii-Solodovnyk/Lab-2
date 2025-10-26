@@ -8,6 +8,6 @@ vms – prędkość wiatru w m/s (wartość zmiennoprzecinkowa)
 
 Dane wyjściowe
 Program wypisuje:
-- prędkość w m/s i węzłach (kn)
-- numer Beauforta (B)
-- nazwę opisową 
+-prędkość w m/s i węzłach (kn)
+-numer Beauforta (B)
+-nazwę opisową 
