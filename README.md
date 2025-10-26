@@ -1,12 +1,12 @@
-# Skala Beauforta – Program w C
+Skala Beauforta – Program w C
 
-## 🎯 Cel projektu
+Cel projektu
 Program oblicza siłę wiatru w skali Beauforta na podstawie prędkości podanej w metrach na sekundę (m/s).
 
-## 📥 Dane wejściowe
+Dane wejściowe
 - `vms` – prędkość wiatru w m/s (wartość zmiennoprzecinkowa)
 
-## 📤 Dane wyjściowe
+Dane wyjściowe
 Program wypisuje:
 - prędkość w m/s i węzłach (kn)
 - numer Beauforta (B)
