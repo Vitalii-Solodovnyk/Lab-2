@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+    float vms;      // prędkość wiatru w m/s
+    float vkn;      // prędkość węzłach
+    int B;           // siła wiatru w skali Beauforta
+
+    printf("Podaj m/s: ");
+    scanf("%f", &vms);
+
+    // przeliczenie m/s → węzły
+    vkn = vms * 1.94384;
+
+    // wyznaczenie siły Beauforta
+    if (vkn < 1) {
+        printf ("B = 0 (Calm)\n");
+    } else if (vkn <= 3) {
+        printf ("B = 1 (Light Air)\n");
+    } else if (vkn <= 6) {
+        printf("B = 2 (Light Breeze)\n");
+    } else if (vkn <= 10) {
+        printf("B = 3 (Gentle Breeze)\n");
+    } else if (vkn <= 16) {
+        printf("B=4 (Moderate Breeze)\n");
+    } else if (vkn <= 21) {
+        printf("B=5 (Fresh Breeze)\n");
+    } else if (vkn <= 27) {
+       printf("B=6 (Strong Breeze)\n");
+    } else if (vkn <= 33) {
+       printf ("B=7 (Near Gale)\n");
+    } else if (vkn <= 40) {
+        printf("B = 8 (Gale)\n");
+    } else if (vkn <= 47) {
+        printf("B = 9 (Strong Gale)\n");
+    } else if (vkn <= 55) {
+       printf ("B = 10 (Storm)\n");
+    } else if (vkn <= 63) {
+        printf ("B = 11 (Violent Storm)\n");
+    } else {
+        printf("B = 12 (Hurricane)\n");
+    }
+
+    // wynik
+    printf("\nPrędkość wiatru: %.2f m/s = %.2f kn\n", v_ms, v_kn);
+    printf("Siła wiatru: B=%d (%s)\n", B, name);
+
+    return 0;
+}
